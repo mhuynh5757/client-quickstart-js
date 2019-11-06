@@ -7,8 +7,8 @@
 
   var device;
 
-  log('Requesting Capability Token...');
-  $.getJSON('https://YOUR_FUNCTION_SUBDOMAIN_HERE.twil.io/capability-token')
+  log('Requesting Access Token...');
+  $.getJSON('https://YOUR_FUNCTION_SUBDOMAIN_HERE.twil.io/access-token')
     .then(function (data) {
       log('Got a token.');
       console.log('Token: ' + data.token);
